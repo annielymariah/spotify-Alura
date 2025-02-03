@@ -84,6 +84,11 @@
     display: flex;
 }
 
+.library .library__button:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .library .library__button .fa {
     font-size: 20px;
     font-weight: 300;
@@ -99,6 +104,11 @@
 
 .library__content .fa-plus {
     margin: 24px 10px;
+}
+
+.library__content .fa-plus:hover {
+    color: white;
+    cursor: pointer;
 }
 
 /* SIDEBAR PLAYLIST */
@@ -151,6 +161,11 @@
     margin-top: 12px;
 }
 
+.section-playlist__content .section-playlist__button:hover {
+    background-color: #b3b3b3;
+}
+
+
 /* COOKIES */
 
 .sidebar .cookies{
@@ -182,6 +197,12 @@
     padding:8px;
     border-radius:20px;
     font-size: 0.85rem; 
+}
+
+.languages .languages__button:hover {
+    transform: scale(1.02);
+    transform-origin: center;
+    transition: transform 0.2s ease;
 }
 
 /* DISCLAIMER */
@@ -223,4 +244,24 @@
     border: 0px;
     border-radius: 40px;
     flex-shrink: 1;
+}
+
+.disclaimer-premium button {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    flex-shrink: 1;
+    
+}
+
+.disclaimer-premium button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.02);
+    transform-origin: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
