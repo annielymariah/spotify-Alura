@@ -24,7 +24,6 @@
 </head>
 
 <body>
-    <h1>Spotify</h1>
     <div class="sidebar">
         <nav class="sidebar_navigation">
 
@@ -94,15 +93,16 @@
             <nav class="header__navigation">
                 <div class="navigation">
                     <button class="arrow-left">
-                        <img src="./src/assets/icons/small-left.png" alt="Seta para esquerda">
+                        <img src="./src/assets/icons/small-left.png" alt="" />
                     </button>
                     <button class="arrow-right">
-                        <img src="./src/assets/icons/small-right.png" alt="Seta para direita">
+                        <img src="./src/assets/icons/small-right.png" alt="" />
                     </button>
                 </div>
                 <div class="header__search">
-                    <img src="./src/assets/icons/search.png" alt="">
-                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                    <img src="./src/assets/icons/search.png" alt="" />
+                    <input id="search-input" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false"
+                        placeholder="O que você quer ouvir?" value="" />
                 </div>
                 <div class="header__login">
                     <button class="subscribe">Inscreva-se</button>
@@ -115,12 +115,11 @@
             <div class="playlist-container">
                 <div id="result-playlists">
                     <div class="playlist">
-                        <h1 id="greeting">Boas Vindas!</h1>
-                        <h2 class="greeting-subtitle">Navegue pelas seções</h2>
+                        <h1 id="greeting">Boas vindas!</h1>
+                        <h2 class="session">Navegue por todas as seções</h2>
                     </div>
 
-                    <!-- CARD LIST -->
-
+                    <!-- CARDS LIST -->
                     <div class="offer__scroll-container">
                         <div class="offer__list">
                             <section class="offer__list-item">
@@ -246,26 +245,26 @@
                             </section>
                         </div>
                     </div>
-
-                    <div id="result-artist" class="hidden">
-                        <div class="grid-container">
-                            <div class="artist-card" id="">s
-                                <div class="card-img">
-                                    <img id="artist-img" class="artist-img" />
-                                    <div class="play">
-                                        <span class="fa fa-solid fa-play"></span>
-                                    </div>
+                </div>
+                <div id="result-artist" class="hidden">
+                    <div class="grid-container">
+                        <div class="artist-card" id="">
+                            <div class="card-img">
+                                <img id="artist-img" class="artist-img" />
+                                <div class="play">
+                                    <span class="fa fa-solid fa-play"></span>
                                 </div>
-                                <div class="card-text">
-                                    <a title="Foo Fighters" class="vst" href=""></a>
-                                    <span class="artist-name" id="artist-name"></span>
-                                    <span class="artist-categorie">Artista</span>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a title="Foo Fighters" class="vst" href=""></a>
+                                <span class="artist-name" id="artist-name"></span>
+                                <span class="artist-categorie">Artista</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
