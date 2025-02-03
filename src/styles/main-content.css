@@ -1,10 +1,10 @@
-/*HEADER*/
+/* HEADER */
 
 .main-container {
-    max-width: 80ww;
-    height: 100vh;
+    max-width: 100ww;
+    height: 80vh;
     margin-left: 320px;
-    margin-right: 56px;
+    margin-right: 56px; 
 }
 
 .header__navigation {
@@ -89,4 +89,259 @@
     border-radius: 40px;
 }
 
+/* PLAYLIST */
 
+.playlist-container {
+    height: 90h;
+    width: 90hr;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.playlist {
+    margin: 24px;
+}
+
+.playlist #greeting {
+
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.playlist .greeting-subtitle {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* SCROLL */
+
+.offer__scroll-container {
+    max-height: 43vh;
+    margin: 24px;
+    overflow-y: auto;
+  }
+  
+  .offer__scroll-container::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  .offer__scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  /* SCROLL END*/
+  
+  .offer__list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+  
+    /* JS CODE */
+
+    display: grid;
+    gap: 16px;
+    grid-gap: 32px;
+    margin: 0 auto;
+  }
+  
+  /* CARDS */
+
+  .cards {
+    position: relative; 
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .cards span {
+    padding: 16px;
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  /* COLOR CARDS */
+
+  .card1 {
+    background: linear-gradient(to bottom, rgb(0, 150, 120), rgb(0, 100, 80));
+}
+.card2 {
+    background: linear-gradient(to bottom, rgb(170, 0, 255), rgb(132, 0, 231));
+}
+.card3 {
+    background: linear-gradient(to bottom, rgb(50, 80, 150), rgb(30, 50, 100));
+}
+.card4 {
+    background: linear-gradient(to bottom, rgb(180, 40, 70), rgb(140, 25, 50));
+}
+.card5 {
+    background: linear-gradient(to bottom, rgb(255, 50, 120), rgb(232, 17, 91));
+}
+.card6 {
+    background: linear-gradient(to bottom, rgb(110, 150, 190), rgb(83, 122, 161));
+}
+.card7 {
+    background: linear-gradient(to bottom, rgb(170, 120, 200), rgb(142, 102, 172));
+}
+.card8 {
+    background: linear-gradient(to bottom, rgb(40, 180, 16), rgb(20, 138, 8));
+}
+.card9 {
+    background: linear-gradient(to bottom, rgb(50, 80, 150), rgb(30, 50, 100));
+}
+.card10 {
+    background: linear-gradient(to bottom, rgb(255, 40, 60), rgb(233, 20, 41));
+}
+.card11 {
+    background: linear-gradient(to bottom, rgb(100, 70, 100), rgb(80, 55, 80));
+}
+.card12 {
+    background: linear-gradient(to bottom, rgb(250, 80, 10), rgb(216, 64, 0));
+}
+.card13 {
+    background: linear-gradient(to bottom, rgb(220, 110, 20), rgb(186, 93, 7));
+}
+.card14 {
+    background: linear-gradient(to bottom, rgb(0, 50, 120), rgb(0, 30, 80));
+}
+.card15 {
+    background: linear-gradient(to bottom, rgb(90, 50, 120), rgb(60, 30, 80));
+}
+
+  /* COLOR CARDS END*/
+  
+  .offer__list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+  }
+  
+  /* ARTIST CARDS */
+  
+  .artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .grid-container {
+    grid-gap:24px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-width: 767px;
+  }
+  
+  .artist-card {
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .artist-card:hover {
+    background-color: #252525;
+  }
+  
+  .card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+  }
+  
+  .card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+  }
+  
+  .artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  
+  .play {
+    position: relative;
+  }
+  
+  .play .fa-play {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  
+  .artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  
+  .play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  #result-artist {
+    padding: 12px 40px;
+  }
+  
+  /* ARTIST CARDS END */
+
+  #result-playlists {
+    padding: 12px 40px;
+  }
