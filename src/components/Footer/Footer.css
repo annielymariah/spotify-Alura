@@ -1,0 +1,58 @@
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgb(162, 31, 158), rgb(0, 205, 237), rgb(4, 178, 65));
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display-premium .text {
+    flex-shrink: 0;
+}
+
+.display-premium, .disclaimer-premium__title {
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+}
+
+.display-premium, .disclaimer-premium__subtitle {
+    font-size: 0.750rem;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    flex-shrink: 1;
+}
+
+.disclaimer-premium button {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    flex-shrink: 1;
+    
+}
+
+.disclaimer-premium button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.02);
+    transform-origin: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
