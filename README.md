@@ -11,7 +11,7 @@ This repository contains the content and projects developed during the second Al
 Here are the branches created so far:
 
 - [__main/:__](https://github.com/annielymariah/spotify-Alura.git) The functional project with HTML5, CSS3, and JavaScript.
-- [__react/:__](https://github.com/annielymariah/web_course/tree/css) The front-end adaptation using the React framework.
+- [__react/:__](https://github.com/annielymariah/spotify-Alura/tree/react) The front-end adaptation using the React framework.
 
 ## Spotify Result 🎧 
 
